@@ -91,16 +91,13 @@ int main()
         printf("O PIB Per Capita da Carta 1, de R$%.2f é superior ao da Carta 2, cujo valor é de R$%.2f.\n", pibPerCapita1, pibPerCapita2);
         printf("Por isso, a Carta 1 (%s) venceu!\n", cidade1);
     }
-    else
+    else if(pibPerCapita2 > pibPerCapita1)
     {
-        if(pibPerCapita2 > pibPerCapita1)
-        {
-            printf("O PIB Per Capita da Carta 2, de R$%.2f é superior ao da Carta 1, cujo valor é de R$%.2f.\n", pibPerCapita2, pibPerCapita1);
-            printf("Por isso, a Carta 2 (%s) venceu!\n", cidade2);
-        }
-        else
-            printf("O PIB Per Capita da Carta 1 é igual ao PIB Per Capita da Carta 2. As duas cidades empataram.\n");
+        printf("O PIB Per Capita da Carta 2, de R$%.2f é superior ao da Carta 1, cujo valor é de R$%.2f.\n", pibPerCapita2, pibPerCapita1);
+        printf("Por isso, a Carta 2 (%s) venceu!\n", cidade2);
     }
+    else
+        printf("O PIB Per Capita da Carta 1 é igual ao PIB Per Capita da Carta 2. As duas cidades empataram.\n");
 
     printf("\n");
 
